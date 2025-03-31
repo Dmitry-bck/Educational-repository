@@ -4,7 +4,7 @@ public class Calculator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Calc calculator = new Calc(); // Создаем экземпляр калькулятора
+        calc calculator = new calc();
 
         System.out.print("Введите первое число: ");
         double num1 = scanner.nextDouble();
@@ -39,26 +39,20 @@ public class Calculator {
             System.out.println(e.getMessage());
         }
     }
-    public static class Calc {
-
-        public double sum(double a, double b) {
-            return a + b;
-        }
-
-        public double subtract(double a, double b) {
-            return a - b;
-        }
-
-        public double multiply(double a, double b) {
-            return a * b;
-        }
-
-        public double divide(double a, double b) {
-            if (b == 0) {
-                throw new ArithmeticException("Ошибка: деление на ноль!");
-            }
-            return a / b;
-        }
-    }
+//     public static class Calc {
+//
+//         public double sum(double a, double b) {return a + b; }
+//
+//         public double subtract(double a, double b) {return a - b; }
+//
+//         public double multiply(double a, double b) {return a * b; }
+//
+//         public double divide(double a, double b) {
+//            if (b == 0) {
+//                throw new ArithmeticException("Ошибка: деление на ноль!");
+//            }
+//            return a / b;
+//        }
+//    }
 }
 
